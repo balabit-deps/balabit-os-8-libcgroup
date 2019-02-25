@@ -1,0 +1,6 @@
+version=4
+
+# We have to un-break some upstream version numbers, and transfrom .rc to ~rc
+
+opts="uversionmangle=s/v(\d\.\d+)/$1/;s/\.rc/~rc/" \
+https://sf.net/libcg/libcgroup-(.+)\.tar\.bz2
